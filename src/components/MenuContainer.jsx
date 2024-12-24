@@ -14,7 +14,7 @@ export default function MenuContainer() {
   };
 
   React.useEffect(() => {
-    fetch("https://restoran-solo-backend-production.up.railway.app")
+    fetch("https://restoran-solo-backend-production.up.railway.app/api/menus/")
       .then((response) => response.json())
       .then((data) => setMenu(data));
   }, []);
